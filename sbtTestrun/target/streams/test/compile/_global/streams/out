@@ -1,7 +1,16 @@
-[0m[[0m[31merror[0m] [0m[0m/Users/christianroth/000CODE/playground/scala/scala-playground/sbtTestrun/src/test/scala/underscore4/U4Spec.scala:12:12: not found: value Divide[0m
-[0m[[0m[31merror[0m] [0m[0m    assert(Divide(1,2).equals(Finite(0)))[0m
-[0m[[0m[31merror[0m] [0m[0m           ^[0m
-[0m[[0m[31merror[0m] [0m[0m/Users/christianroth/000CODE/playground/scala/scala-playground/sbtTestrun/src/test/scala/underscore4/U4Spec.scala:13:12: not found: value Divide[0m
-[0m[[0m[31merror[0m] [0m[0m    assert(Divide(1,2).equals(Finite(0)))[0m
-[0m[[0m[31merror[0m] [0m[0m           ^[0m
-[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/christianroth/000CODE/playground/scala/scala-playground/sbtTestrun/src/test/scala/underscore4/U4Spec.scala:39:16: not found: value Tree[0m
+[0m[[0m[31merror[0m] [0m[0m    val tree = Tree( Tree( Tree(Leaf(1), Tree(Leaf(2), Leaf(3))), Leaf(4)), Tree(Leaf(5), Leaf(6)))[0m
+[0m[[0m[31merror[0m] [0m[0m               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/christianroth/000CODE/playground/scala/scala-playground/sbtTestrun/src/test/scala/underscore4/U4Spec.scala:39:22: not found: value Tree[0m
+[0m[[0m[31merror[0m] [0m[0m    val tree = Tree( Tree( Tree(Leaf(1), Tree(Leaf(2), Leaf(3))), Leaf(4)), Tree(Leaf(5), Leaf(6)))[0m
+[0m[[0m[31merror[0m] [0m[0m                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/christianroth/000CODE/playground/scala/scala-playground/sbtTestrun/src/test/scala/underscore4/U4Spec.scala:39:28: not found: value Tree[0m
+[0m[[0m[31merror[0m] [0m[0m    val tree = Tree( Tree( Tree(Leaf(1), Tree(Leaf(2), Leaf(3))), Leaf(4)), Tree(Leaf(5), Leaf(6)))[0m
+[0m[[0m[31merror[0m] [0m[0m                           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/christianroth/000CODE/playground/scala/scala-playground/sbtTestrun/src/test/scala/underscore4/U4Spec.scala:39:42: not found: value Tree[0m
+[0m[[0m[31merror[0m] [0m[0m    val tree = Tree( Tree( Tree(Leaf(1), Tree(Leaf(2), Leaf(3))), Leaf(4)), Tree(Leaf(5), Leaf(6)))[0m
+[0m[[0m[31merror[0m] [0m[0m                                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/christianroth/000CODE/playground/scala/scala-playground/sbtTestrun/src/test/scala/underscore4/U4Spec.scala:39:77: not found: value Tree[0m
+[0m[[0m[31merror[0m] [0m[0m    val tree = Tree( Tree( Tree(Leaf(1), Tree(Leaf(2), Leaf(3))), Leaf(4)), Tree(Leaf(5), Leaf(6)))[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                            ^[0m
+[0m[[0m[31merror[0m] [0m[0m5 errors found[0m

@@ -103,12 +103,28 @@ final case object RedLight extends TrafficLight
 final case object YellowLight extends TrafficLight
 final case object GreenLight extends TrafficLight
 
-
-
 // Calculator ADT -- SUM type
 sealed trait CalculatorResult 
-final case class SuccessCalc(x: Float) extends CalculatorResult
+final case class SuccessCalc(n: Int) extends CalculatorResult
 final case class FailureCalc(s: String) extends CalculatorResult
+
+final case object Calculator {
+  def +(calc: CalculatorResult, n: Int): CalculatorResult = 
+    calc match {
+      case SuccessCalc(nn) => SuccessCalc(n + nn)
+      case FailureCalc(s) => FailureCalc(s)
+    }
+  def -(calc: CalculatorResult, n: Int): CalculatorResult = 
+    calc match {
+      case SuccessCalc(nn) => SuccessCalc(n - nn)
+      case FailureCalc(s) => FailureCalc(s)
+    }
+  def /(calc: CalculatorResult, n: Int): CalculatorResult = 
+    calc match {
+      case FailureCalc(s) => FailureCalc(s)
+      case SuccessCalc(nn) => if (n == 0) FailureCalc("Division by zero") else SuccessCalc(nn / n)
+    }
+}
 
 // Bottled water ADT -- size (int), source (well, spring, tap), cabonated (bool)
 sealed trait WaterSource
@@ -121,3 +137,36 @@ sealed trait Water {
   def source: WaterSource
   def carbonated: Boolean
 }
+
+
+// Recursive Data Types
+sealed trait IntList {
+  def length: Int =
+    this match {
+      case End => 0
+      case Pair(_,t) => 1 + t.length
+   }
+  def product: Int =
+    this match {
+      case End => 1
+      case Pair(h,t) => h * t.product
+   }
+  def double: IntList =
+    this match {
+      case End => End
+      case Pair(h,t) => Pair(2 * h, t.double)
+   }
+}
+final case object End extends IntList
+final case class Pair(head: Int, tail: IntList) extends IntList
+
+// Tree
+sealed trait Tree {
+  def sum: Int =
+    this match {
+      case Leaf(n) => n
+      case Node(l, r) => l.sum + r.sum
+    }
+}
+final case class Leaf(n: Int) extends Tree
+final case class Node(left: Tree, right: Tree) extends Tree
