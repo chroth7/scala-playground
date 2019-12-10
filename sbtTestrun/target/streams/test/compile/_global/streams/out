@@ -1,0 +1,5 @@
+[0m[[0m[31merror[0m] [0m[0m/Users/christianroth/000CODE/playground/scala/scala-playground/sbtTestrun/src/test/scala/underscore4/U4Spec.scala:7:23: not enough arguments for method apply: (radius: Double, color: example.underscore4.Color)example.underscore4.Circle in object Circle.[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter color.[0m
+[0m[[0m[31merror[0m] [0m[0m    assert(Draw(Circle(2)).equals("Kreisli mit Radius 2.0"))[0m
+[0m[[0m[31merror[0m] [0m[0m                      ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m

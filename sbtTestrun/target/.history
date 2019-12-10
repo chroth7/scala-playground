@@ -1,0 +1,68 @@
+compile
+~compile
+help
+help run
+run
+set ThisBuild / scalaVersion := "2.13.1"
+compile
+scalaVersion
+session save
+compile
+reload
+compile
+reload
+compile
+reload
+compile
+test
+last update
+reload
+compile
+test
+help test
+help testQuick
+~testQuick
+reload
+compile
+console
+reload
+project
+projects
+reload
+compile
+console
+reload
+testQuick
+reload
+console
+reload
+run
+reload
+dist
+Docker/publishLocal
+console
+run
+compile
+run
+Shape
+console
+run
+~run
+console
+run
+console
+compile
+console
+:q
+run
+console
+run
+console
+reload
+compile
+console
+run
+~run
+~test
+console
+~test

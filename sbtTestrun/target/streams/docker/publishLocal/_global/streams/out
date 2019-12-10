@@ -1,0 +1,30 @@
+[0m[[0m[0mdebug[0m] [0m[0mExecuting Native docker build --force-rm -t hello:0.1.0-SNAPSHOT .[0m
+[0m[[0m[0mdebug[0m] [0m[0mWorking directory /Users/christianroth/000CODE/playground/scala/scala-playground/sbtTestrun/target/docker/stage[0m
+[0m[[0m[0minfo[0m] [0m[0mSending build context to Docker daemon  13.52MB[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 1/6 : FROM openjdk:latest[0m
+[0m[[0m[0minfo[0m] [0m[0mlatest: Pulling from library/openjdk[0m
+[0m[[0m[0minfo[0m] [0m[0m977461c90301: Pulling fs layer[0m
+[0m[[0m[0minfo[0m] [0m[0m3b03bc4978d7: Pulling fs layer[0m
+[0m[[0m[0minfo[0m] [0m[0m1a2163fa5305: Pulling fs layer[0m
+[0m[[0m[0minfo[0m] [0m[0m3b03bc4978d7: Verifying Checksum[0m
+[0m[[0m[0minfo[0m] [0m[0m3b03bc4978d7: Download complete[0m
+[0m[[0m[31merror[0m] [0m[0mjava.lang.RuntimeException: Nonzero exit value: 130[0m
+[0m[[0m[31merror[0m] [0m[0m	at com.typesafe.sbt.packager.docker.DockerPlugin$.publishLocalDocker(DockerPlugin.scala:335)[0m
+[0m[[0m[31merror[0m] [0m[0m	at com.typesafe.sbt.packager.docker.DockerPlugin$.$anonfun$projectSettings$26(DockerPlugin.scala:119)[0m
+[0m[[0m[31merror[0m] [0m[0m	at com.typesafe.sbt.packager.docker.DockerPlugin$.$anonfun$projectSettings$26$adapted(DockerPlugin.scala:117)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.Function1.$anonfun$compose$1(Function1.scala:49)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.util.$tilde$greater.$anonfun$$u2219$1(TypeFunctions.scala:62)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.std.Transform$$anon$4.work(Transform.scala:67)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Execute.$anonfun$submit$2(Execute.scala:281)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.util.ErrorHandling$.wideConvert(ErrorHandling.scala:19)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Execute.work(Execute.scala:290)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Execute.$anonfun$submit$1(Execute.scala:281)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.ConcurrentRestrictions$$anon$4.$anonfun$submitValid$1(ConcurrentRestrictions.scala:178)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.CompletionService$$anon$2.call(CompletionService.scala:37)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.util.concurrent.FutureTask.run(FutureTask.java:266)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.util.concurrent.FutureTask.run(FutureTask.java:266)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.lang.Thread.run(Thread.java:745)[0m
+[0m[[0m[31merror[0m] [0m[0m(Docker / [31mpublishLocal[0m) Nonzero exit value: 130[0m
