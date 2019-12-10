@@ -1,4 +1,7 @@
-[0m[[0m[31merror[0m] [0m[0m/Users/christianroth/000CODE/playground/scala/scala-playground/sbtTestrun/src/main/scala/example/underscore4/Underscore4.scala:30:18: recursive value r needs type[0m
-[0m[[0m[31merror[0m] [0m[0m  val r = minmax(r)[0m
-[0m[[0m[31merror[0m] [0m[0m                 ^[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/christianroth/000CODE/playground/scala/scala-playground/sbtTestrun/src/main/scala/example/underscore4/Underscore4.scala:98:26: not found: value YellowLight[0m
+[0m[[0m[31merror[0m] [0m[0m      case GreenLight => YellowLight[0m
+[0m[[0m[31merror[0m] [0m[0m                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/christianroth/000CODE/playground/scala/scala-playground/sbtTestrun/src/main/scala/example/underscore4/Underscore4.scala:99:12: not found: value YellowLight[0m
+[0m[[0m[31merror[0m] [0m[0m      case YellowLight => RedLight[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m

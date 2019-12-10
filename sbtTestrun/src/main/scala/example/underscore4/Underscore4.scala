@@ -77,3 +77,47 @@ object Draw {
     }
 }
 
+// Division example
+sealed trait DivisionResult 
+final case object Infinite extends DivisionResult
+final case class Finite(n: Int) extends DivisionResult
+
+final case object divide extends DivisionResult {
+  def apply(up: Int, down: Int): DivisionResult =
+    down match {
+      case 0 => Infinite
+      case _ => Finite(up / down)
+    }
+}
+
+// Traffic light ADT -- SUM type
+sealed trait TrafficLight {
+  def next: TrafficLight = 
+    this match {
+      case RedLight => GreenLight
+      case GreenLight => YellowLight
+      case YellowLight => RedLight
+    }
+}
+final case object RedLight extends TrafficLight
+final case object YellowLight extends TrafficLight
+final case object GreenLight extends TrafficLight
+
+
+
+// Calculator ADT -- SUM type
+sealed trait CalculatorResult 
+final case class SuccessCalc(x: Float) extends CalculatorResult
+final case class FailureCalc(s: String) extends CalculatorResult
+
+// Bottled water ADT -- size (int), source (well, spring, tap), cabonated (bool)
+sealed trait WaterSource
+final case object well extends WaterSource
+final case object spring extends WaterSource
+final case object tap extends WaterSource
+
+sealed trait Water {
+  def size: Int
+  def source: WaterSource
+  def carbonated: Boolean
+}
