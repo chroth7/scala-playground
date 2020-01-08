@@ -45,4 +45,16 @@ class U4Spec extends FunSuite with DiagrammedAssertions {
         Node(Leaf(5), Leaf(6)))
     assert(tree.sum.equals(21))
   }
+
+  test("CalculatorExample") {
+    val exp1 = Addition(Number(1), Number(2))
+    val exp2 = Addition(Number(1), Subtraction(Number(2), Number(1)))
+    val exp3 = Division(Number(2), Number(2))
+    val exp4 = Division(Number(2), Number(0))
+
+    assert(exp1.eval.equals(Success(3.0)))
+    assert(exp2.eval.equals(Success(2.0)))
+    assert(exp3.eval.equals(Success(1.0)))
+    assert(exp4.eval.equals(Failure("Division by 0")))
+  }
 }
